@@ -31,7 +31,12 @@ module.exports.createStore = () => {
     storage: './store.sqlite',
   });
 
-  const users = db.define('user', {
+  const users = db.define('users', {
+    id: {
+      type: Sequelize.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     createdAt: Sequelize.DATE,
     updatedAt: Sequelize.DATE,
     email: Sequelize.STRING,
@@ -40,6 +45,11 @@ module.exports.createStore = () => {
   });
 
   const trips = db.define('trip', {
+    id: {
+      type: Sequelize.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     createdAt: Sequelize.DATE,
     updatedAt: Sequelize.DATE,
     launchId: Sequelize.INTEGER,
