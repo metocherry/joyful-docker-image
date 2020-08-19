@@ -59,6 +59,7 @@ module.exports = (env) => {
         compress: true,
         hot: true,
         overlay: true,
+        stats: 'errors-only',
       },
     });
   }
