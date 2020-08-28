@@ -3,6 +3,8 @@
 dnf update -y
 dnf install -y langpacks-en net-tools
 
+localectl set-locale LANG=en_US.UTF-8
+
 
 # Intall Git
 dnf install -y git
