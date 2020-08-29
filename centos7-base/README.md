@@ -1,3 +1,3 @@
-# Centos7 Base
+# Centos Base
 
-Base image on centos 7
+Base image on centos
