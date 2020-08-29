@@ -5,5 +5,5 @@ docker run \
   --rm \
   --name nodejs \
   -v "$(pwd)"/:/app:cached \
-  centos8/node:latest \
+  metocherry/centos7-base:latest \
   /bin/bash
